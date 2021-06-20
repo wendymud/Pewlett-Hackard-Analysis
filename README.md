@@ -29,11 +29,11 @@ In the first deliverable, it was necessary to filter the names of the employees 
 Taking all of this into consideration, the company was concerned on where the gaps would like in terms of resources, so the next query created was to conduct a total count of the employees grouped per job title as an indication of the necessary transitions that would need to happen with hiring new employees and knowledge transfer.  The bulk of the roles needing replacement are Senior Engineer roles at 29K, Senior Staff at 28K and general Engineer roles listed at 14K.  The summary can be viewed in Figure 3.
 
 ![retiring_titles.PNG](./retiring_titles.PNG)
-#### Figure 3
+#### Figure 3 (information depicted in figures are fictitious)
 
 The final deliverable included gathering a list of eligible employees to enter into the mentorship program (per age), to take on and possibly fill the necessary roles from the potential retirees.  The query created for this group included the name, birthdate and title of current employees.
 
 ![mentor_eligibility.PNG](./mentor_eligibility.PNG)
-#### Figure 4
+#### Figure 4 (information depicted in figures are fictitious)
 
 In summary, this analysis provided a much clearer picture of the potential up and coming changes to the workforce at Pewlett Hackard.  It give management a very good understanding of the situation at hand and how to tackle the issues that may arise due to the aging organization.  Without the appropriate preparation of this "silver tsunami" the gaps incurred would be a huge detriment to the entire company.  However in terms of utilizing the next wave of employees, it would be great start in getting the list of 2k employees engaged with the mentorship program.  Dependent upon the actual number of retirees that will actually separate with the company that are age-appropriate, there will need to be a lot more intervention in terms of hiring and training to fill all of the upcoming empty opportunities.
