@@ -121,9 +121,46 @@ ORDER BY emp_no, to_date DESC;
 
 SELECT * FROM retiring_titles
 
+SELECT emp_no, first_name, last_name, birth_date
+FROM employees
+
+SELECT from_date, to_date
+FROM dept_emp
+
+SELECT title
+FROM title
+
+
 -- Check how many employees are retiring by title
 SELECT COUNT(crt.emp_no), title
 INTO retiring_titles
 FROM unique_titles as crt
 GROUP BY title
 ORDER BY COUNT DESC
+
+SELECT * FROM employees
+
+SELECT e.emp_no,
+		e.first_name,
+		e.last_name,
+		e.birth_date,
+ 		de.from_date,
+ 		de.to_date
+INTO mentor1
+FROM employees as e
+LEFT JOIN dept_emp as de on e.emp_no = de.emp_no
+WHERE (birth_date BETWEEN '1965-01-01' AND '1965-12-31')
+ORDER BY emp_no
+
+SELECT DISTINCT ON(emp_no) m1.emp_no,
+		m1.first_name,
+		m1.last_name,
+		m1.birth_date,
+		m1.from_date,
+		m1.to_date,
+ 		t1.title
+INTO mentor_eligibility
+FROM mentor1 as m1
+LEFT JOIN titles as t1 on m1.emp_no = t1.emp_no
+WHERE (birth_date BETWEEN '1965-01-01' AND '1965-12-31')
+ORDER BY emp_no

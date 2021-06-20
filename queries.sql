@@ -18,6 +18,7 @@ AND (hire_date BETWEEN '1985-01-01' AND '1988-12-31');
 
 SELECT * FROM dept_emp
 
+--joining tables
 SELECT first_name, last, name
 FROM employees as e
 LEFT JOIN dept_emp as d on e.emo_no = d.emp_no
