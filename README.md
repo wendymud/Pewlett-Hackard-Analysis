@@ -12,7 +12,7 @@ Tools used: PGAdmin to create tables and data bases, to code and query in PostGr
 
 From a techical perspective, the best way to get a handle on this date is to first create a conceptual Entity Relationhship Diagram (ERD).  This ERD will take a logical look at the data and how to interlink it so that it's easier to query all of the data together.  Figure 1, below shows the depictions of six data tables.  Some have employee information, some have roles and hire dates.  Each of the tables of data we have an how they link together.  The Primary Keys (PK) within each table will display as a key, linking the tables together for easy joining of data.
 
-![EmployeeDB.PNG](EmployeeDB.PNG)
+![EmployeeDB.PNG](./EmployeeDB.PNG)
 ### Figure 1
 
 The snapshot of the conceptual ERD, allows for creating of the six logical tables that will be utilized for this analysis.  Within PostGres SQL, the tables need to be built prior to uploading the actual data.  The six tables were built and their relationships were initially referenced to initiate the merging of data files.  Following this step, it was important to slowly import all of the necessary data files into each of their newly created tables.  There was a bit of data wrangling involved as some of the created tables needed fixing.  There were some minor errors encountered (and fixed) prior to importing the data files.  The data needed to be accurately handled prior to the next step which is to merge or join some of the tables together.  Dependent upon the necessary data required, some of the tables were properly merged.  As an example you can see that the primary key was 'emp_no."  That made it easy to join the tables together bases on their employee numbers.  With the departments, those were referenced together then linked over one of the other files with the "emp_no" key. 
@@ -33,7 +33,7 @@ Taking all of this into consideration, the company was concerned on where the ga
 
 The final deliverable included gathering a list of eligible employees to enter into the mentorship program (per age), to take on and possibly fill the necessary roles from the potential retirees.  The query created for this group included the name, birthdate and title of current employees.
 
-![mentorship_eligibility.csv](./data/mentorship_eligibility.csv)
+![mentor_eligibility.csv](./data/mentor_eligibility.csv)
 ### Figure 4
 
 In summary, this analysis provided a much clearer picture of the potential up and coming changes to the workforce at Pewlett Hackard.  It give management a very good understanding of the situation at hand and how to tackle the issues that may arise due to the aging organization.  Without the appropriate preparation of this "silver tsunami" the gaps incurred would be a huge detriment to the entire company.  However in terms of utilizing the next wave of employees, it would be great start in getting the list of 2k employees engaged with the mentorship program.  Dependent upon the actual number of retirees that will actually separate with the company that are age-appropriate, there will need to be a lot more intervention in terms of hiring and training to fill all of the upcoming empty opportunities.
